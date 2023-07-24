@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'open-sans';
+    font-weight: 400;
+    src: url(../../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'poppins';
+    font-weight: 500;
+    src: url(../../font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'stardos';
+    font-weight: 700;
+    src: url(../../font/StardosStencil-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'mons-semi';
+    font-weight: 600;
+    src: url(../../font/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'mons-medium';
+    font-weight: 500;
+    src: url(../../font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'nunito-sans';
+    font-weight: 600;
+    src: url(../../font/NunitoSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'nunito-sans-black';
+    font-weight: 1000;
+    src: url(../../font/NunitoSans-Black.ttf);
+}

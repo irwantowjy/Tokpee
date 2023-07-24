@@ -1,0 +1,39 @@
+.a-kategori, .SEO a, .footer-text a, .SEO-bottom a, .a-footer a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.a-footer a {
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.footer-text a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footer-text p {
+    color: rgba(49, 53, 59, 0.68);
+    font-size: 0.8em;
+}
+
+.footer-text h6 {
+    color: rgba(49, 53, 59, 0.68);
+}
+
+.a-footer a:hover {
+    color: rgb(3, 172, 14);
+}
+
+.a-footer a {
+    color: #BFBFBF;
+    font-size: 0.9em;
+}
+
+.footer {
+    padding: 5px 15px;
+    border-radius: 0px 0px 3px 3px;
+}

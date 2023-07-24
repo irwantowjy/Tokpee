@@ -1,0 +1,741 @@
+/* Import fonts from google font */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(132, 7, 190), rgb(55, 1, 59));
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* Variables */
+:root {
+  --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+  --mango-gradient: linear-gradient(to right, #ffa751, #ffe259);
+  --text-color: #f7f9f9;
+  --primary-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+  --border-color: rgba(0, 0, 0, 0.329);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* max-height: 610px; */
+}
+
+.container .panel {
+  width: 60%;
+  height: 72%;
+  box-shadow: var(--primary-gradient);
+  border-radius: 20px;
+  overflow: hidden;
+  -moz-box-shadow: 10px 10px 10px 10px rgba(50, 50, 50, 0.75);
+  box-shadow: 10px 10px 10px 10px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 4px 2px 60px 4px rgba(50, 50, 50, 0.75);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100%;
+  background: #fff;
+}
+
+.liquid {
+  background: url(../../img/rocket-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+h1,
+.follow,
+.btn,
+form h6,
+form .form-group .form-input, p {
+  font-family: 'poppins';
+}
+
+h2,
+.gmail,
+.facebook,
+.or,
+.box-agreement {
+  font-family: 'open-sans';
+}
+
+h1 {
+  text-align: left;
+  padding: 0 2rem;
+  color: whitesmoke;
+  font-size: 40px;
+}
+
+a {
+  color: orange;
+}
+
+.white {
+  color: white;
+  text-decoration: none;
+  padding: 5px 70px;
+}
+
+.owl-carousel {
+  width: 100%;
+  height: 320px;
+  max-height: 330px;
+}
+.col.login {
+  padding: 0 2rem;
+}
+
+.owl-carousel .owl-item .login_img {
+  float: right;
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-right: 3rem;
+}
+
+.follow {
+  padding: 0 1.4rem;
+  padding-top: 1.4rem;
+  color: whitesmoke;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.follow::after {
+  content: "";
+  position: absolute;
+  left: 14%;
+  width: 50px;
+  border: 1px solid whitesmoke;
+  border-radius: 4rem;
+  margin-top: 0.5rem;
+}
+
+.follow i:first-child {
+  margin-left: 4rem;
+}
+
+/* Second Column Login */
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4rem;
+  background: #2b5876;
+  color: whitesmoke;
+  font-size: 3rem;
+  box-shadow: var(--primary-shadow);
+  cursor: pointer;
+}
+
+.login .btn-signup,
+form .btn-login {
+  background: var(--primary-gradient);
+  float: right;
+  margin: 1rem;
+  width: 100%;
+  margin-left: 0;
+}
+
+.login {
+  padding: 0 2vw;
+}
+
+.titles {
+  margin-bottom: 2.2rem;
+}
+
+form {
+  height: 55%;
+  max-height: 280px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(132, 7, 190), rgb(55, 1, 59));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form h6 {
+  padding-left: 4.5rem;
+  color: #444444d2;
+  font-family: "mons-semi";
+  padding: 0;
+  margin: 0;
+  padding-left: 3rem;
+}
+
+form .form-group,
+.form-group-1 {
+  text-align: left;
+  /* margin-top: 1rem; */
+  margin-right: 1rem;
+  /* width: 100%; */
+}
+
+form .form-group {
+  border: 2px solid #f1f1f1;
+  border-radius: 16px;
+  padding: 0.3rem;
+  /* width: 19vw; */
+}
+
+form .form-group .form-input {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form .input-icon {
+  display: inline;
+  color: var(--border-color);
+  /* margin-left: 100px; */
+}
+
+#icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form .btn-login {
+  float: none;
+  padding: 0.7rem 9rem;
+  /* margin: 40px 0; */
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+  font-weight: bold;
+}
+
+/* for sign in with  */
+.sign-in-with {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.facebook,
+.gmail {
+  flex-basis: 30%;
+  /* border-radius: 10px; */
+  margin-top: 13px;
+  padding: .5rem .4rem;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.facebook {
+  background-color: #4C66A4;
+  color: white;
+  border: 1px solid #4C66A4;
+}
+
+.gmail {
+  border: 1px solid #ddd;
+  color: #5a5959;
+}
+
+.or {
+  padding: 0.3vw 0;
+  /* margin-bottom: 25px; */
+  text-align: center;
+  font-size: 15px;
+}
+
+.or::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background-color: #999;
+  margin-bottom: -14px;
+}
+
+span {
+  padding: 5px 10px;
+  background: white;
+}
+
+#agreement {
+  margin-right: 0.6vw;
+}
+
+.box-agreement {
+  margin-top: 20px;
+  display: flex;
+  text-align: left;
+  font-size: 10pt;
+}
+
+blue {
+  color: #0270BD;
+  font-weight: bold;
+}
+
+/* phone */
+@media screen and (max-width: 599px) {
+
+  html,
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .pass, .email {
+    margin-top: 0.3rem;
+  }
+
+  .login {
+    padding: 0 5vw;
+  }
+
+  .row {
+    grid-template-columns: 100%;
+  }
+
+  .liquid {
+    display: none;
+  }
+
+  h1 {
+    margin: 0.5rem 0 2rem 0;
+  }
+
+  form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    max-height: none;
+  }
+
+  .container {
+    margin: auto 2vw;
+    height: 100%;
+    max-height: none;
+  }
+
+  .container .panel {
+    width: 100%;
+    height: 60%;
+  }
+
+  .titles {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .or {
+    font-size: 0.6rem;
+  }
+
+  .or::before {
+    margin-bottom: -0.6rem;
+  }
+
+  form .form-group {
+    text-align: center;
+    border: 1px solid var(--border-color);
+    /* margin-top: 0.6rem; */
+    margin-right: 0;
+  }
+
+  form .form-group .form-input {
+    padding: 0.3rem 0.3rem;
+    background: transparent;
+    border: none;
+    font-family: "poppins";
+    font-size: 0.7rem;
+    overflow: hidden;
+    width: 70%;
+  }
+
+  form .input-icon {
+    display: inline;
+    color: var(--border-color);
+    margin-left: 0;
+  }
+
+  form .btn-login {
+    float: none;
+    padding: 0.4rem 2rem;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+  }
+
+  .login .btn-sign-up {
+    margin: 0.5rem 0;
+  }
+
+  .btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.6rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .facebook,
+  .gmail {
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+    margin-top: 0.5rem;
+  }
+}
+
+/* tablet portrait up */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .login {
+    padding: 0 5vw;
+  }
+
+  .pass, .email {
+    margin-top: 0.4rem;
+  }
+
+  .row {
+    grid-template-columns: 100%;
+  }
+
+  .liquid {
+    display: none;
+  }
+
+  h1 {
+    margin: 0.5rem 0 2rem 0;
+  }
+
+  form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.8rem;
+    max-height: none;
+  }
+
+  .container {
+    height: 100%;
+    max-height: none;
+  }
+
+  .container .panel {
+    width: 50%;
+    height: 60%;
+  }
+
+  .titles {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .or {
+    font-size: 0.6rem;
+  }
+
+  .or::before {
+    margin-bottom: -0.6rem;
+  }
+
+  form .form-group {
+    text-align: center;
+    border: 1px solid var(--border-color);
+    /* margin-top: 0.6rem; */
+    margin-right: 0;
+  }
+
+  form .form-group .form-input {
+    padding: 0.3rem 0.3rem;
+    background: transparent;
+    border: none;
+    font-family: "poppins";
+    font-size: 0.7rem;
+    overflow: hidden;
+    width: 70%;
+  }
+
+  form .input-icon {
+    display: inline;
+    color: var(--border-color);
+    margin-left: 0;
+  }
+
+  form .btn-login {
+    float: none;
+    padding: 0.4rem 2rem;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+  }
+
+  .login .btn-sign-up {
+    margin: 0.5rem 0;
+  }
+
+  .btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.6rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .facebook,
+  .gmail {
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+    margin-top: 0.5rem;
+  }
+}
+
+/* tablet landscape up */
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .login {
+    padding: 0 5vw;
+  }
+
+  .pass, .email {
+    margin-top: 0.4rem;
+  }
+
+  .row {
+    grid-template-columns: 100%;
+  }
+
+  .liquid {
+    display: none;
+  }
+
+  h1 {
+    margin: 0.5rem 0 2rem 0;
+  }
+
+  form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.7rem;
+    max-height: none;
+  }
+
+  .container {
+    height: 100%;
+    max-height: none;
+  }
+
+  .container .panel {
+    width: 50%;
+    height: 60%;
+  }
+
+  .titles {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .or {
+    font-size: 0.6rem;
+  }
+
+  .or::before {
+    margin-bottom: -0.6rem;
+  }
+
+  form .form-group {
+    text-align: center;
+    border: 1px solid var(--border-color);
+    /* margin-top: 0.6rem; */
+    margin-right: 0;
+  }
+
+  form .form-group .form-input {
+    padding: 0.3rem 0.3rem;
+    background: transparent;
+    border: none;
+    font-family: "poppins";
+    font-size: 0.7rem;
+    overflow: hidden;
+    width: 70%;
+  }
+
+  form .input-icon {
+    display: inline;
+    color: var(--border-color);
+    margin-left: 0;
+  }
+
+  form .btn-login {
+    float: none;
+    padding: 0.4rem 2rem;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+  }
+
+  .login .btn-sign-up {
+    margin: 0.5rem 0;
+  }
+
+  .btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.6rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .facebook,
+  .gmail {
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+    margin-top: 0.5rem;
+  }
+}
+
+/* desktop up */
+@media screen and (min-width: 1200px) and (max-width:1799px) {
+  h1 {
+    margin: 0.5rem 0 2rem 0;
+  }
+
+  /* form {
+    margin-top: 4.5rem;
+  } */
+
+  .container {
+    height: 100%;
+    max-height: none;
+  }
+
+  .container .panel {
+    width: 60%;
+    height: 70%;
+  }
+
+  .owl-carousel {
+    height: 320px;
+    max-height: 330px;
+  }
+
+  .owl-carousel .owl-item .login_img {
+    width: 23rem;
+    height: 16rem;
+  }
+
+  /* .liquid {
+    background-size: 100%;
+  } */
+
+  .form,
+  .titles {
+    margin-top: 0;
+  }
+
+  .titles {
+    margin-bottom: 0.5rem;
+  }
+
+  .facebook,
+  .gmail {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .or {
+    font-size: 0.6rem;
+  }
+
+  .or::before {
+    margin-bottom: -0.6rem;
+  }
+
+  form .form-group {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid var(--border-color) !important;
+    /* margin-top: 0.7rem; */
+    margin-right: 0;
+    border-radius: 0;
+  }
+
+  form .form-group .form-input {
+    padding: 0.5rem 0.3rem;
+    background: transparent;
+    border: none;
+    font-family: "poppins";
+    font-size: 0.7rem;
+    overflow: hidden;
+    width: 80%;
+  }
+
+  form .input-icon {
+    display: inline;
+    color: var(--border-color);
+    margin-left: 0;
+  }
+
+  form .btn-login {
+    float: none;
+    font-size: 0.7rem;
+    padding: 0.55rem 2rem;
+  }
+
+  .btn {
+    padding: 0.3rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-height:768px) and (max-height:899px) {
+  .container .panel {
+    height: 55%;
+  }
+
+  /* form {
+    margin-top: 5.5rem;
+  } */
+}
+
+@media screen and (min-width: 1200px) and (max-width:1366px) and (min-height:900px) and (max-height:1024px) {
+  .container .panel {
+    height: 48%;
+  }
+
+  form {
+    margin-top: 6rem;
+  }
+}
